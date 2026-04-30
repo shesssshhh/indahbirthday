@@ -5,7 +5,7 @@ body{
   text-align:center;
   overflow-x:hidden;
 
-  background:url("bg.jpg") no-repeat center center/cover;
+  background:url("bg.png") no-repeat center center/cover;
 }
 
 .overlay{
