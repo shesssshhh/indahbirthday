@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Indah ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>Happy Birthday Indah ❤️</h1>
+
+    <p>
+      Hari ini dunia jadi lebih indah karena kamu lahir.
+      Semoga kamu selalu bahagia, sehat, dan semua impian kamu tercapai.
+      Makasih udah hadir di hidup aku.
+    </p>
+
+    <button onclick="pesan()">Klik ini ya</button>
+
+    <div class="gallery">
+      <img src="foto1.jpg">
+      <img src="foto2.jpg">
+      <img src="foto3.jpg">
+    </div>
+  </div>
+
+  <script>
+    function pesan(){
+      alert("Aku sayang kamu, Indah ❤️");
+    }
+
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 5000);
+    }, 300);
+  </script>
+
+</body>
+</html>
