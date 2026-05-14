@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +23,15 @@
       Hari ini dunia rasanya sedikit lebih hangat, lebih indah… cuma karena seseorang paling berharga di hidup aku lahir ke dunia ini. Absurd juga ya, satu manusia bisa ngubah suasana hidup orang lain segitunya. Biologi dan hormon benar-benar proyek aneh.
 
 Aku cuma mau kamu tahu, kehadiran kamu bukan hal kecil buat aku. Kamu jadi rumah di saat kepala aku ribut, jadi alasan kenapa hari-hari biasa terasa lebih hidup.
+
 Semoga kamu selalu dikelilingi hal-hal baik, diberi kesehatan, kebahagiaan, dan jalan buat mencapai semua mimpi yang kamu simpan diam-diam di hati kamu.
 
 Terima kasih karena udah hadir di hidup aku, karena tanpa sadar kamu bikin dunia aku jauh lebih berarti.
+
 Dan kalau suatu hari semuanya terasa berat, aku harap kamu tetap ingat… akan selalu ada seseorang yang nganggep kamu seistimewa itu.
     </p>
 
-   <button id="myButton">Pencet Aku</button> <p id="message"></p>
+    <button onclick="pesan()">Pencet Aku</button>
 
     <div class="gallery">
       <img src="foto1.jpeg">
@@ -39,8 +42,8 @@ Dan kalau suatu hari semuanya terasa berat, aku harap kamu tetap ingat… akan s
 
   <script>
     function pesan(){
-      alert("Mungkin aku bukan orang pertama yang mengucapkan ini hari ini,
-tapi aku berharap aku adalah yang paling tulus.");
+      alert(`Mungkin aku bukan orang pertama yang mengucapkan ini hari ini,
+tapi aku berharap aku adalah yang paling tulus.`);
     }
 
     setInterval(() => {
@@ -49,11 +52,16 @@ tapi aku berharap aku adalah yang paling tulus.");
       heart.innerHTML = "❤️";
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
       document.body.appendChild(heart);
 
-      setTimeout(() => heart.remove(), 5000);
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+
     }, 300);
   </script>
 
 </body>
 </html>
+```
